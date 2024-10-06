@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 .appointment-details { margin-top: 20px; }
                 .detail-row { margin-bottom: 10px; }
                 .detail-label { font-weight: bold; color: #c41e3a; }
-                .alert { background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 10px; border-radius: 5px; margin-top: 20px; }
+                .alert { background-color: #6ceb0f; border: 1px solid #ffeeba; color: #000000; padding: 10px; border-radius: 5px; margin-top: 20px; }
             </style>
         </head>
         <body>
@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </div>
 
-                    <div class='alert'>
+                    <div class='alert' style='font-size: 18px;'>
                         <strong>Información Adicional:</strong><br>
                         " . ($additionalInfo ? nl2br($additionalInfo) : 'No se proporcionó información adicional.') . "
                     </div>
