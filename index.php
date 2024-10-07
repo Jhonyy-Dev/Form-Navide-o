@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPDebug = SMTP::DEBUG_OFF;
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'catalogo150@gmail.com'; // Cambiar a tu correo
-        $mail->Password   = 'amxlpjsjwlvklbux'; // Cambiar a tu contraseña
+        $mail->Username   = 'navidadpromocion3@gmail.com'; // Cambiar a tu correo
+        $mail->Password   = 'ctbgbdhqatsjcxjv'; // Cambiar a tu contraseña
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
@@ -38,8 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->CharSet = 'UTF-8';
 
         // Destinatarios
-        $mail->setFrom('catalogo150@gmail.com', 'Christmas Mini Session');
-        $mail->addAddress('catalogo150@gmail.com', 'Recepcionista');
+        $mail->setFrom('navidadpromocion3@gmail.com', 'Christmas Mini Session');
+        $mail->addAddress('navidadpromocion3@gmail.com', 'Recepcionista');
 
         // Contenido
         $mail->isHTML(true);
@@ -89,9 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class='detail-row'>
                             <span class='detail-label'>Paquete Seleccionado:</span> $selectedPackageName
-                        </div>
-                        <div class='detail-row'>
-                            <span class='detail-label'>ID del Paquete:</span> $selectedPackageId
                         </div>
                         <div class='detail-row'>
                             <span class='detail-label'>Precio del Paquete:</span> $ $selectedPackagePrice

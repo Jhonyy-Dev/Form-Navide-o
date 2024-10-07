@@ -24,20 +24,50 @@
             </div>
         </div>
 
-        <div id="datosCliente"
-            class="mb-6 p-4 border border-gray-300 rounded-md bg-white grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <h2 class="font-bold text-2xl mb-4 text-black col-span-2">Datos del Cliente:</h2>
+        <div id="datosCliente" class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 px-6 py-4">
+                <h2 class="font-bold text-2xl md:text-3xl text-white">Datos del Cliente</h2>
+            </div>
 
-            <p class="text-lg text-black"><strong>Nombre:</strong> <span id="nombreCliente"></span></p>
-            <p class="text-lg text-black"><strong>Apellido:</strong> <span id="apellidoCliente"></span></p>
-            <p class="text-lg text-black"><strong>Teléfono:</strong> <span id="telefonoCliente"></span></p>
-            <p class="text-lg text-black"><strong>Correo:</strong> <span id="correoCliente"></span></p>
-            <p class="text-lg text-black"><strong>Fecha de Cita:</strong> <span id="fechaCita"></span></p>
-            <p class="text-lg text-black"><strong>Hora de Cita:</strong> <span id="horaCita"></span></p>
-            <p class="text-lg text-black"><strong>Paquete Seleccionado:</strong> <span id="paqueteSeleccionado"></span>
-            </p>
-            <p class="text-lg text-black"><strong>Precio:</strong> $<span id="precioPaquete"></span></p>
+            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Nombre</span>
+                        <span id="nombreCliente" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Apellido</span>
+                        <span id="apellidoCliente" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Teléfono</span>
+                        <span id="telefonoCliente" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Correo</span>
+                        <span id="correoCliente" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                </div>
 
+                <div class="space-y-4">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Fecha de Cita</span>
+                        <span id="fechaCita" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Hora de Cita</span>
+                        <span id="horaCita" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Paquete Seleccionado</span>
+                        <span id="paqueteSeleccionado" class="text-lg font-semibold text-gray-800"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-medium text-gray-500">Precio</span>
+                        <span class="text-lg font-semibold text-gray-800">$ <span id="precioPaquete"></span> USD</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Enlace de WhatsApp -->

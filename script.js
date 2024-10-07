@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     flatpickr("#fechaCita", {
         dateFormat: "d/m/Y",
         minDate: "today",
-        maxDate: new Date().fp_incr(30), // Permite seleccionar hasta 30 días en el futuro
+        maxDate: new Date().fp_incr(90), // Permite seleccionar hasta 30 días en el futuro
         locale: {
             firstDayOfWeek: 1,
             weekdays: {
